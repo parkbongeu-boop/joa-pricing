@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>만삭 촬영 준비 설문 | 비앤제이 스튜디오</title>
+<meta name="description" content="소중한 만삭 촬영 정성껏 준비하려고 딱 3가지만 여쭤봐요. 30초면 됩니다.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="만삭 촬영 준비 설문">
+<meta property="og:description" content="딱 3가지만 여쭤봐요. 30초면 됩니다.">
+<meta property="og:type" content="website">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xw0qx6j09q");
+</script>
+<style>
+  :root{
+    --bg:#FBF7F2;
+    --bg-alt:#F1EFE7;
+    --card:#FFFFFF;
+    --ink:#2A211C;
+    --ink-mid:#5E5147;
+    --ink-soft:#867567;
+    --line:#E4D9CC;
+    --line-soft:#EFE7DC;
+    --rose:#9E3B4E;
+    --rose-tint:#F6E7E9;
+    --sage:#5F7259;
+    --sage-tint:#E8EDE4;
+    --gold:#B5842C;
+    --gold-tint:#F7EBD2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#191411; --bg-alt:#211A16; --card:#241D19;
+      --ink:#F2E8DC; --ink-mid:#C6B5A4; --ink-soft:#A08E7D;
+      --line:#3B2F28; --line-soft:#312722;
+      --rose:#DE8195; --rose-tint:#372327;
+      --sage:#A3B899; --sage-tint:#242B21;
+      --gold:#D9AC5C; --gold-tint:#382C16;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#191411; --bg-alt:#211A16; --card:#241D19;
+    --ink:#F2E8DC; --ink-mid:#C6B5A4; --ink-soft:#A08E7D;
+    --line:#3B2F28; --line-soft:#312722;
+    --rose:#DE8195; --rose-tint:#372327;
+    --sage:#A3B899; --sage-tint:#242B21;
+    --gold:#D9AC5C; --gold-tint:#382C16;
+  }
+  :root[data-theme="light"]{
+    --bg:#FBF7F2; --bg-alt:#F1EFE7; --card:#FFFFFF;
+    --ink:#2A211C; --ink-mid:#5E5147; --ink-soft:#867567;
+    --line:#E4D9CC; --line-soft:#EFE7DC;
+    --rose:#9E3B4E; --rose-tint:#F6E7E9;
+    --sage:#5F7259; --sage-tint:#E8EDE4;
+    --gold:#B5842C; --gold-tint:#F7EBD2;
+  }
+
+  *{ box-sizing:border-box; }
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; animation:none !important; }
+  }
+  html, body{ height:100%; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕","Noto Sans KR",sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    -webkit-text-size-adjust:100%;
+  }
+  .serif{ font-family:"Nanum Myeongjo",Batang,"바탕","Noto Serif KR",serif; }
+
+  /* ── 진행바 ── */
+  .progress{
+    position:fixed; top:0; left:0; right:0; height:3px;
+    background:var(--line-soft); z-index:10;
+  }
+  .progress__bar{
+    height:100%; width:0;
+    background:var(--rose);
+    transition:width .32s ease;
+  }
+  .progress[hidden]{ display:none; }
+
+  /* ── 레이아웃 ── */
+  .stage{
+    min-height:100svh;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    padding:calc(40px + env(safe-area-inset-top)) 20px calc(32px + env(safe-area-inset-bottom));
+  }
+  .screen{
+    display:none;
+    width:100%; max-width:520px;
+  }
+  .screen.is-active{ display:block; animation:rise .34s ease both; }
+  @keyframes rise{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:none; }
+  }
+
+  .step-no{
+    display:block; margin:0 0 14px;
+    font-size:11.5px; font-weight:700; letter-spacing:0.16em;
+    color:var(--rose);
+  }
+
+  /* ── 커버 ── */
+  .mark{ width:44px; height:44px; margin:0 auto 18px; display:block; }
+  .cover{ text-align:center; }
+  .cover .brand-en{
+    margin:0 0 12px;
+    font-size:11px; letter-spacing:0.42em; text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .cover h1{
+    margin:0 0 22px;
+    font-family:"Nanum Myeongjo",Batang,"바탕","Noto Serif KR",serif;
+    font-size:clamp(27px,7.5vw,36px); font-weight:700; line-height:1.4;
+    text-wrap:balance;
+  }
+  .cover p{
+    margin:0 0 8px;
+    color:var(--ink-mid); font-size:15.5px;
+    text-wrap:balance;
+  }
+  .cover .note{
+    margin-top:22px; font-size:13.5px; color:var(--ink-soft);
+  }
+
+  /* ── 문항 ── */
+  .q{
+    margin:0 0 26px;
+    font-family:"Nanum Myeongjo",Batang,"바탕","Noto Serif KR",serif;
+    font-size:clamp(20px,5.2vw,25px); font-weight:700; line-height:1.55;
+    text-wrap:balance;
+  }
+  .q em{
+    font-style:normal; color:var(--rose);
+  }
+  .lead{
+    margin:0 0 18px;
+    font-size:15.5px; color:var(--ink-mid); line-height:1.85;
+    text-wrap:pretty;
+  }
+  .journey{
+    margin:0 0 18px; padding:14px 16px;
+    background:var(--rose-tint); border-radius:4px;
+    text-align:center;
+    font-size:15.5px; font-weight:700; letter-spacing:0.02em;
+    color:var(--ink);
+  }
+
+  /* ── 입력 ── */
+  .field{ margin:0 0 16px; }
+  .field label{
+    display:block; margin:0 0 7px;
+    font-size:13.5px; font-weight:600; color:var(--ink-mid);
+  }
+  .field input{
+    width:100%;
+    padding:13px 14px;
+    font:inherit; font-size:16px; /* iOS 자동 확대 방지 */
+    color:var(--ink);
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:3px;
+    appearance:none;
+  }
+  .field input:focus{
+    outline:2px solid var(--rose); outline-offset:-1px;
+    border-color:var(--rose);
+  }
+  .field input::placeholder{ color:var(--ink-soft); opacity:.75; }
+  .field input[type="date"]{ min-height:49px; }
+  .field input.is-invalid{ border-color:var(--gold); }
+  .hint{
+    margin:7px 0 0;
+    font-size:12.5px; color:var(--gold); font-weight:600;
+  }
+  .hint[hidden]{ display:none; }
+  .hp{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+  /* ── 동의 ── */
+  .consent{
+    margin:22px 0 0; padding:14px 16px;
+    background:var(--bg-alt); border:1px solid var(--line-soft);
+    border-radius:3px;
+  }
+  .consent__check{
+    display:flex; gap:10px; align-items:flex-start;
+    cursor:pointer;
+    font-size:14px; color:var(--ink);
+  }
+  .consent__check input{
+    flex:none; width:19px; height:19px; margin:3px 0 0;
+    accent-color:var(--rose);
+  }
+  .consent__check .req{ color:var(--rose); font-weight:700; }
+  .consent details{ margin-top:10px; }
+  .consent summary{
+    cursor:pointer; font-size:12.5px; color:var(--ink-soft);
+    list-style:none;
+  }
+  .consent summary::-webkit-details-marker{ display:none; }
+  .consent summary::after{ content:" 자세히 보기 ▾"; }
+  .consent details[open] summary::after{ content:" 접기 ▴"; }
+  .consent dl{
+    margin:10px 0 0; padding-top:10px;
+    border-top:1px solid var(--line-soft);
+    font-size:12.5px; line-height:1.8; color:var(--ink-mid);
+  }
+  .consent dt{ font-weight:700; color:var(--ink); }
+  .consent dd{ margin:0 0 7px; }
+
+  /* ── 선택지 ── */
+  .choices{ border:0; margin:0; padding:0; }
+  .choice{
+    display:block; position:relative;
+    margin:0 0 10px;
+  }
+  .choice input{
+    position:absolute; opacity:0;
+    width:100%; height:100%; margin:0; cursor:pointer;
+  }
+  .choice span{
+    display:block;
+    padding:16px 18px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:3px;
+    font-size:15.5px; font-weight:600;
+    transition:border-color .16s ease, background .16s ease;
+  }
+  .choice input:checked + span{
+    border-color:var(--rose);
+    background:var(--rose-tint);
+    color:var(--rose);
+  }
+  .choice input:focus-visible + span{
+    outline:2px solid var(--gold); outline-offset:2px;
+  }
+  @media (hover:hover){
+    .choice:hover span{ border-color:var(--rose); }
+  }
+
+  /* ── 버튼 ── */
+  .btn{
+    display:block; width:100%;
+    margin-top:22px; padding:15px 16px;
+    font:inherit; font-size:15.5px; font-weight:700;
+    text-align:center; text-decoration:none;
+    color:var(--card); background:var(--rose);
+    border:1px solid var(--rose); border-radius:3px;
+    cursor:pointer;
+    transition:opacity .16s ease;
+  }
+  :root[data-theme="dark"] .btn{ color:#191411; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .btn{ color:#191411; }
+  }
+  .btn:hover{ opacity:.88; }
+  .btn:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .btn:disabled{
+    opacity:.4; cursor:not-allowed;
+  }
+  .btn--ghost{
+    background:transparent; color:var(--ink-soft);
+    border-color:transparent;
+    margin-top:8px; font-weight:600; font-size:14px;
+  }
+  :root[data-theme="dark"] .btn--ghost{ color:var(--ink-soft); }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .btn--ghost{ color:var(--ink-soft); }
+  }
+
+  .error{
+    margin:14px 0 0; padding:12px 14px;
+    background:var(--gold-tint); border-left:3px solid var(--gold);
+    border-radius:3px;
+    font-size:13.5px; color:var(--ink);
+  }
+  .error[hidden]{ display:none; }
+
+  /* ── 완료 ── */
+  .done{ text-align:center; }
+  .done h2{
+    margin:0 0 22px;
+    font-family:"Nanum Myeongjo",Batang,"바탕","Noto Serif KR",serif;
+    font-size:clamp(24px,6.5vw,31px); font-weight:700;
+  }
+  .done p{
+    margin:0 0 15px;
+    font-size:15.5px; color:var(--ink-mid); line-height:1.85;
+    text-wrap:balance;
+  }
+  .done .accent{
+    color:var(--ink); font-weight:700;
+  }
+  .done .last{
+    margin-top:26px; font-size:17px; font-weight:700; color:var(--rose);
+  }
+  .check{
+    width:52px; height:52px; margin:0 auto 20px; display:block;
+  }
+
+  footer{
+    margin-top:34px; padding-top:18px;
+    border-top:1px solid var(--line-soft);
+    text-align:center;
+    font-size:12px; color:var(--ink-soft); line-height:1.9;
+  }
+  footer a{
+    color:var(--rose); font-weight:700; text-decoration:none;
+    white-space:nowrap;
+  }
+  footer a:hover, footer a:focus-visible{ text-decoration:underline; }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" hidden>
+  <div class="progress__bar" id="progressBar"></div>
+</div>
+
+<main class="stage">
+
+  <!-- ══ 커버 ══ -->
+  <section class="screen cover is-active" id="s-cover" aria-labelledby="coverTitle">
+    <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="var(--rose)" stroke-width="2.5"/>
+      <g fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linejoin="round">
+        <path d="M50 14 L61 39 L39 39 Z"/>
+        <path d="M50 14 L61 39 L39 39 Z" transform="rotate(72 50 50)"/>
+        <path d="M50 14 L61 39 L39 39 Z" transform="rotate(144 50 50)"/>
+        <path d="M50 14 L61 39 L39 39 Z" transform="rotate(216 50 50)"/>
+        <path d="M50 14 L61 39 L39 39 Z" transform="rotate(288 50 50)"/>
+      </g>
+    </svg>
+    <p class="brand-en">B &amp; J Studio</p>
+    <h1 id="coverTitle">만삭 촬영<br>준비 설문</h1>
+    <p>나리병원 협력스튜디오 비앤제이입니다.</p>
+    <p>소중한 만삭 촬영 정성껏 준비하려고<br>딱 3가지만 여쭤봐요.</p>
+    <p class="note">30초면 됩니다.</p>
+    <button type="button" class="btn" id="btnStart">시작하기</button>
+  </section>
+
+  <!-- ══ 문항 1 ══ -->
+  <section class="screen" id="s-1" aria-labelledby="q1Title">
+    <span class="step-no">01 / 03</span>
+    <h2 class="q" id="q1Title">성함과 연락처를<br>남겨주세요.</h2>
+
+    <div class="field">
+      <label for="fName">성함</label>
+      <input type="text" id="fName" name="name" autocomplete="name" maxlength="50" placeholder="홍길동" enterkeyhint="next">
+    </div>
+
+    <div class="field">
+      <label for="fPhone">연락처</label>
+      <input type="tel" id="fPhone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="13" placeholder="010-1234-5678" enterkeyhint="next" aria-describedby="phoneHint">
+      <p class="hint" id="phoneHint" hidden>연락 가능한 휴대폰 번호를 010-1234-5678 형식으로 적어주세요.</p>
+    </div>
+
+    <div class="field">
+      <label for="fDue">출산 예정일</label>
+      <input type="date" id="fDue" name="due_date">
+    </div>
+
+    <div class="hp" aria-hidden="true">
+      <label for="fWebsite">Website</label>
+      <input type="text" id="fWebsite" name="website" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="consent">
+      <label class="consent__check" for="fConsent">
+        <input type="checkbox" id="fConsent">
+        <span><span class="req">[필수]</span> 촬영 상담 연락을 위한 성함·연락처·출산 예정일 수집에 동의합니다.</span>
+      </label>
+      <details>
+        <summary>수집 항목과 이용 목적</summary>
+        <dl>
+          <dt>수집 항목</dt>
+          <dd>성함, 연락처, 출산 예정일</dd>
+          <dt>이용 목적</dt>
+          <dd>촬영 일정 안내 및 상담 연락</dd>
+          <dt>보유 기간</dt>
+          <dd>수집일로부터 1년, 이후 지체 없이 파기</dd>
+          <dt>동의 거부 권리</dt>
+          <dd>동의를 거부하실 수 있으나, 이 경우 촬영 상담 연락이 어렵습니다.</dd>
+        </dl>
+      </details>
+    </div>
+
+    <button type="button" class="btn" id="btnNext1" disabled>다음</button>
+  </section>
+
+  <!-- ══ 문항 2 ══ -->
+  <section class="screen" id="s-2" aria-labelledby="q2Title">
+    <span class="step-no">02 / 03</span>
+    <p class="lead">저희 <strong>홍보촬영</strong>은<br>만삭에서 끝나지 않아요.</p>
+    <p class="journey">만삭 → 신생아 → 50일</p>
+    <p class="lead">세 번을 이어서 담고<br>마지막에 <strong>6페이지 앨범</strong>으로<br>선물해 드립니다.</p>
+    <h2 class="q" id="q2Title">이 여정,<br><em>알고 계셨을까요.</em></h2>
+
+    <fieldset class="choices">
+      <legend class="hp">이 여정을 알고 계셨나요</legend>
+      <label class="choice">
+        <input type="radio" name="knew" value="알고 있었어요">
+        <span>네 알고 있었어요</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="knew" value="오늘 처음 알았어요">
+        <span>오늘 처음 알았어요</span>
+      </label>
+    </fieldset>
+
+    <button type="button" class="btn btn--ghost" id="btnBack2">← 이전</button>
+  </section>
+
+  <!-- ══ 문항 3 ══ -->
+  <section class="screen" id="s-3" aria-labelledby="q3Title">
+    <span class="step-no">03 / 03</span>
+    <p class="lead">저희는 여기서 더 나아가<br>돌까지 쭉 이어 담는<br><strong>성장앨범</strong>도 있어요.</p>
+    <h2 class="q" id="q3Title">혹시 <em>관심 있으신가요.</em></h2>
+
+    <fieldset class="choices">
+      <legend class="hp">성장앨범에 관심이 있으신가요</legend>
+      <label class="choice">
+        <input type="radio" name="album" value="관심 있어요">
+        <span>네 관심 있어요</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="album" value="설명 듣고 싶어요">
+        <span>설명 듣고 싶어요</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="album" value="오늘은 촬영만">
+        <span>오늘은 촬영만요</span>
+      </label>
+    </fieldset>
+
+    <p class="error" id="submitError" hidden></p>
+    <button type="button" class="btn" id="btnSubmit" hidden>다시 보내기</button>
+    <button type="button" class="btn btn--ghost" id="btnBack3">← 이전</button>
+  </section>
+
+  <!-- ══ 완료 ══ -->
+  <section class="screen done" id="s-done" aria-labelledby="doneTitle">
+    <svg class="check" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="26" cy="26" r="24" fill="none" stroke="var(--rose)" stroke-width="2"/>
+      <path d="M15 26.5 L23 34 L37 19" fill="none" stroke="var(--rose)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h2 id="doneTitle">감사합니다.</h2>
+    <p>오늘 많이 찍어드리는<br>이유가 있어요.</p>
+    <p class="accent">만삭 · 신생아 · 50일</p>
+    <p>세 번의 사진이 모여<br>하나의 앨범이 되거든요.</p>
+    <p>그래서 한 컷도<br>허투루 담지 않아요.</p>
+    <p class="last">편하게 오세요.</p>
+    <footer>
+      나리병원 협력스튜디오<br>
+      비앤제이 <a href="tel:03180493799">031-8049-3799</a>
+    </footer>
+  </section>
+
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  var SUPABASE_URL = "https://ygqsplkuejivptbpqmoo.supabase.co";
+  var SUPABASE_KEY = "sb_publishable_SciwMEodumT99p-S1rDYWg_MhHqpJpo";
+  var ENDPOINT = SUPABASE_URL + "/rest/v1/maternity_survey_responses";
+
+  var SCREENS = ["cover", "1", "2", "3", "done"];
+  var current = 0;
+  var submitted = false;
+
+  var $ = function(id){ return document.getElementById(id); };
+  var progress = $("progress");
+  var progressBar = $("progressBar");
+
+  /* ── 화면 전환 ── */
+  function render(){
+    SCREENS.forEach(function(key, i){
+      $("s-" + key).classList.toggle("is-active", i === current);
+    });
+    var isQuestion = current >= 1 && current <= 3;
+    progress.hidden = !isQuestion;
+    progressBar.style.width = isQuestion ? (current / 3 * 100) + "%" : "0";
+    window.scrollTo(0, 0);
+
+    // 문항 화면에 들어오면 첫 요소로 초점을 옮겨 스크린리더가 새 질문을 읽게 한다
+    var heading = $("s-" + SCREENS[current]).querySelector("h1, h2, .lead");
+    if (heading && current > 0) {
+      heading.setAttribute("tabindex", "-1");
+      heading.focus({ preventScroll: true });
+    }
+  }
+
+  function go(index){
+    if (index === current) return;
+    current = index;
+    history.pushState({ step: index }, "");
+    render();
+  }
+
+  window.addEventListener("popstate", function(e){
+    // 완료 후에는 뒤로가기로 문항에 돌아가지 않는다
+    if (submitted) { render(); return; }
+    current = (e.state && typeof e.state.step === "number") ? e.state.step : 0;
+    render();
+  });
+
+  history.replaceState({ step: 0 }, "");
+
+  /* ── 커버 ── */
+  $("btnStart").addEventListener("click", function(){ go(1); });
+
+  /* ── 문항 1: 입력 검증 ── */
+  var fName = $("fName");
+  var fPhone = $("fPhone");
+  var fDue = $("fDue");
+  var fConsent = $("fConsent");
+  var btnNext1 = $("btnNext1");
+
+  // 출산 예정일은 과거일 수 없고, 만삭 촬영이므로 10개월 뒤까지만
+  (function setDueRange(){
+    var today = new Date();
+    var pad = function(n){ return String(n).padStart(2, "0"); };
+    var fmt = function(d){ return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); };
+    var max = new Date(today.getTime());
+    max.setMonth(max.getMonth() + 10);
+    fDue.min = fmt(today);
+    fDue.max = fmt(max);
+  })();
+
+  var phoneHint = $("phoneHint");
+
+  fPhone.addEventListener("input", function(){
+    var d = fPhone.value.replace(/\D/g, "").slice(0, 11);
+    var out = d;
+    if (d.length > 7)      out = d.slice(0, 3) + "-" + d.slice(3, 7) + "-" + d.slice(7);
+    else if (d.length > 3) out = d.slice(0, 3) + "-" + d.slice(3);
+    fPhone.value = out;
+    // 다 적었는데 형식이 안 맞을 때만 알려준다. 타이핑 도중에 잔소리하지 않는다.
+    showPhoneHint(d.length >= 10 && !phoneOk());
+    validate1();
+  });
+
+  fPhone.addEventListener("blur", function(){
+    showPhoneHint(fPhone.value !== "" && !phoneOk());
+  });
+
+  function showPhoneHint(show){
+    phoneHint.hidden = !show;
+    fPhone.classList.toggle("is-invalid", show);
+  }
+
+  function phoneOk(){
+    return /^01[016789]-\d{3,4}-\d{4}$/.test(fPhone.value);
+  }
+
+  function validate1(){
+    var ok = fName.value.trim().length > 0 && phoneOk() && fDue.value !== "" && fConsent.checked;
+    btnNext1.disabled = !ok;
+    return ok;
+  }
+
+  [fName, fDue].forEach(function(el){ el.addEventListener("input", validate1); });
+  fConsent.addEventListener("change", validate1);
+
+  fName.addEventListener("keydown", function(e){ if (e.key === "Enter") fPhone.focus(); });
+  fPhone.addEventListener("keydown", function(e){ if (e.key === "Enter") fDue.focus(); });
+
+  btnNext1.addEventListener("click", function(){ if (validate1()) go(2); });
+
+  /* ── 문항 2·3: 선택 즉시 다음 ── */
+  var answers = { knew: null, album: null };
+
+  function onChoice(name, next){
+    document.querySelectorAll('input[name="' + name + '"]').forEach(function(input){
+      input.addEventListener("change", function(){
+        answers[name] = input.value;
+        // 선택이 눈에 보이도록 잠깐 머문 뒤 넘어간다
+        setTimeout(next, 260);
+      });
+    });
+  }
+
+  onChoice("knew", function(){ go(3); });
+  onChoice("album", function(){ submit(); });
+
+  $("btnBack2").addEventListener("click", function(){ history.back(); });
+  $("btnBack3").addEventListener("click", function(){ history.back(); });
+
+  /* ── 전송 ── */
+  var submitError = $("submitError");
+  var btnSubmit = $("btnSubmit");
+  var sending = false;
+
+  function collectReferrer(){
+    var parts = [];
+    if (document.referrer) parts.push(document.referrer);
+    if (location.search) parts.push(location.search);
+    return parts.length ? parts.join(" | ").slice(0, 300) : null;
+  }
+
+  function submit(){
+    if (sending || submitted) return;
+
+    // 허니팟이 채워졌으면 봇이므로 조용히 완료 화면만 보여준다
+    if ($("fWebsite").value !== "") { submitted = true; go(4); return; }
+
+    sending = true;
+    submitError.hidden = true;
+    btnSubmit.hidden = true;
+    btnSubmit.disabled = true;
+    btnSubmit.textContent = "보내는 중…";
+    btnSubmit.hidden = false;
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "apikey": SUPABASE_KEY,
+        "Authorization": "Bearer " + SUPABASE_KEY,
+        "Content-Type": "application/json",
+        // SELECT 권한이 없으므로 삽입 결과를 되돌려받지 않는다. 빼면 401이 난다.
+        "Prefer": "return=minimal"
+      },
+      body: JSON.stringify({
+        name: fName.value.trim(),
+        phone: fPhone.value,
+        due_date: fDue.value || null,
+        knew_journey: answers.knew,
+        album_interest: answers.album,
+        privacy_consent: true,
+        referrer: collectReferrer()
+      })
+    })
+    .then(function(res){
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      submitted = true;
+      sending = false;
+      go(4);
+    })
+    .catch(function(){
+      sending = false;
+      btnSubmit.disabled = false;
+      btnSubmit.textContent = "다시 보내기";
+      btnSubmit.hidden = false;
+      submitError.hidden = false;
+      submitError.textContent = "전송이 잘 안 됐어요. 잠시 후 다시 보내주세요. 계속 안 되면 스튜디오로 연락 주시면 바로 접수해 드릴게요.";
+    });
+  }
+
+  btnSubmit.addEventListener("click", submit);
+
+  render();
+})();
+</script>
+
+</body>
+</html>
